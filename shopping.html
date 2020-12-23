@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/shopping.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2190873_458jsasou39.css">
+    <script src="js/jquery-1.8.2.js"></script>
+    <script src="js/jquery-3.1.1.js"></script>
+
+
+</head>
+
+<body>
+    <!--头部 -->
+    <div id="h_nav">
+        <div id="h_nav_c">
+            <img src="image/logo.png" alt="">
+            <ul class="h_o">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">音乐</a></li>
+                <li><a href="#">视频</a></li>
+                <li><a href="#" style="color:#fff;">阅读</a></li>
+                <li><a href="#">游戏</a></li>
+            </ul>
+            <span id="spa">
+                <input type="text" placeholder="燃烧" id="inp">
+                <div id="inv">
+                    <ul>
+                        <a href="#" title="郎朗">
+                            <li><span style="background-color:darkred;">1</span><span>郎朗</span></li>
+                        </a>
+                        <a href="#" title="最美的乡村">
+                            <li><span style="background-color:orangered;">2</span><span>最美的乡村</span></li>
+                        </a>
+                        <a href="#" title="许飞">
+                            <li><span style="background-color:orange;">3</span><span>许飞</span></li>
+                        </a>
+                        <a href="#" title="猎天狼">
+                            <li><span>4</span><span>猎天狼</span></li>
+                        </a>
+                        <a href="#" title="李荣浩">
+                            <li><span>5</span><span>李荣浩</span></li>
+                        </a>
+                        <a href="#" title="向往的生活4">
+                            <li><span>6</span><span>向往的生活4</span></li>
+                        </a>
+                        <a href="#" title="陈学冬">
+                            <li><span>7</span><span>陈学冬</span></li>
+                        </a>
+                        <a href="#" title="婆婆和妈妈">
+                            <li><span>8</span><span>婆婆和妈妈</span></li>
+                        </a>
+                        <a href="#" title="张杰">
+                            <li><span>9</span><span>张杰</span></li>
+                        </a>
+                        <a href="#" title="青春环游记2">
+                            <li><span>10</span><span>青春环游记2</span></li>
+                        </a>
+                    </ul>
+
+                </div>
+            </span>
+            <a href="#" id="h_i_a"><i class="iconfont icon-search"></i></a>
+            <ul class="h_t">
+                <li><a href="#">企业服务</a></li>
+                <li><a href="#">关于咪咕</a></li>
+                <li><a href="#">加入我们</a></li>
+                <li><a href="#">客服</a></li>
+                <li><a href="#" class="h_t_w" title="app下载"><i class="iconfont icon-shouji"></i></a></li>
+                <li>
+                    <a href="#" class="h_t_w" id="dengll" title="登陆">
+                        <i class="iconfont icon-ren"></i>
+                    </a>
+                    <div id="login">
+                        <div id="lo_t">
+                            <div>
+                                <a href="#">
+                                    <span><img src="image/lo1.jpg" alt=""></span>
+                                    <p title="阳光的陪伴">阳光的陪伴</p>
+                                </a>
+                                <p title="Sunnee杨芸晴">Sunnee杨芸晴</p>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <span><img src="image/lo2.jpg" alt=""></span>
+                                    <p title="雪落下的声音 (2020浙江卫视跨年演唱会)">雪落下的声音 (2020浙江卫视跨年演唱会)</p>
+                                </a>
+                                <p title="吴谨言">吴谨言</p>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <span><img src="image/lo3.jpg" alt=""></span>
+                                    <p title="陈先生">陈先生</p>
+                                </a>
+                                <p title="吴新东">吴新东</p>
+                            </div>
+                        </div>
+                        <div id="lo_b">
+                            <a href="#" title="登录" id="deng">登录</a>
+                            <p>登录后查看更多专属内容哦</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- ----------------------中间------------------------------- -->
+    <div class="s-center">
+        <p class="my-shop">我的购物车</p>
+        <table id="ta1" cellspacing="0" cellspadding="0">
+            <tr>
+                <td style="padding-left:36px; box-sizing: border-box;">
+                    <input type="checkbox" name="" id="zong">
+                    <span>&nbsp;全选</span>
+                </td>
+                <td>商品</td>
+                <td>商品信息</td>
+                <td>数量</td>
+                <td>单价</td>
+                <td>操作</td>
+            </tr>
+
+            <tr class="t">
+                <td><input type="checkbox" name="" id="" class="small"></td>
+                <td>
+                    <a>
+                        <img src="image/n5.jpg" alt="" width="90" height="120">
+                        <span>小风暴</span>
+                    </a>
+                </td>
+                <td>一件</td>
+                <td>
+                    <input type="button" class="btn1" id="" value="-">
+                    <input type="text" value="1" class="text">
+                    <input type="button" class="btn2" id="" value="+">
+                </td>
+                <td><span class="qian">5.00</span></td>
+                <td class="de"><i class="iconfont icon-shanchu1" id="dele"></i></td>
+            </tr>
+
+            <tr class="t">
+                <td><input type="checkbox" name="" id="" class="small"></td>
+                <td>
+                    <a>
+                        <img src="image/n2.jpg" alt="">
+                        <span>三城记</span>
+                    </a>
+                </td>
+                <td>一件</td>
+                <td>
+                    <input type="button" class="btn1" id="" value="-">
+                    <input type="text" value="1" class="text">
+                    <input type="button" class="btn2" id="" value="+">
+                </td>
+                <td><span class="qian">9.00</span></td>
+                <td class="de"><i class="iconfont icon-shanchu1" id="dele"></i></td>
+            </tr>
+            <tr class="t">
+                <td><input type="checkbox" name="" id="" class="small"></td>
+                <td>
+                    <a>
+                        <img src="image/w7.jpg" alt="">
+                        <span>好兆头</span>
+                    </a>
+                </td>
+                <td>一件</td>
+                <td>
+                    <input type="button" class="btn1" id="" value="-">
+                    <input type="text" value="1" class="text">
+                    <input type="button" class="btn2" id="" value="+">
+                </td>
+                <td><span class="qian">5.00</span></td>
+                <td class="de"><i class="iconfont icon-shanchu1" id="dele"></i></td>
+            </tr>
+        </table>
+        <div class="nooo">
+            <p>好好学习，天天向上，看到喜欢的书籍，点击【加入购物车】，在这里合并购买</p>
+        </div>
+        <div class="bot">
+            <div class="xuan">
+                <input type="checkbox" id="fan"><label for="fan">&nbsp;反选</label>
+                &nbsp;
+                <input type="checkbox" id="quxiao"><label for="quxiao">&nbsp;取消</label>
+            </div>
+            <div class="yi">已选商品<span id="z_jian"> 0 </span>件 </div>
+            <div class="heji">
+                <p style="font-size: 14px;">
+                    合计(不含运费):￥<span id="heji">0.00</span>
+                </p>
+                <p style="font-size: 12px;">(若购买享有优惠，相应金额将在订单结算页面减扣)</p>
+            </div>
+            <div class="jiesuan"><a href="#">合计</a></div>
+        </div>
+    </div>
+    
+
+    <!-- --------------------------------------------------------- -->
+
+    <!-- ----------------------尾部------------------------------- -->
+    <div class="foot">
+        <div id="footer">
+            <!-- 上部 -->
+            <div class="fo_tl">
+                <ul>
+                    <li>
+                        <p>旗下公司</p>
+                        <a href="#">咪咕音乐</a>
+                        <a href="#">咪咕视频</a>
+                        <br>
+                        <a href="#">咪咕数媒</a>
+                        <a href="#">咪咕互娱</a>
+                        <br>
+                        <a href="#">咪咕动漫</a>
+                    </li>
+                    <li>
+                        <p>服务支持</p>
+                        <a href="#">版权保护</a>
+                        <span class="phone">
+                            <a href="#">
+                                手机访问
+                            </a>
+                            <div class="ph"><img src="image/icon_wx.png" alt=""></div>
+                        </span>
+                        <br>
+                        <a href="#">服务协议</a>
+                        <a href="#">隐私政策</a>
+                    </li>
+                    <li>
+                        <p>推荐链接</p>
+                        <a href="#">中国移动合作伙伴大会</a>
+                        <a href="#">原创服务门户</a>
+                    </li>
+                    <li>
+                        <p>发现更多</p>
+                        <a href="#">咪咕商城</a>
+                        <a href="#">官网体验</a>
+                        <br>
+                        <a href="#">咪咕咖啡</a>
+                        <a href="#">咪咕圈粉</a>
+                    </li>
+                    <li class="er" style="width: 150px;">
+                        <p>关注咪咕</p>
+                        <span>
+                            <a href="#">
+                                <i class="iconfont icon-weixin1"></i>
+                            </a>
+                            <div><img src="image/icon_wx.png" alt=""></div>
+                        </span>
+                        <span>
+                            <a href="#">
+                                <i class="iconfont icon-weiBo"></i>
+                            </a>
+                            <div><img src="image/icon_wb.png" alt=""></div>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <!-- 下部 -->
+            <div class="fo_tb">
+                <div class="fo_tbc">
+                    <p>
+                        <span>增值业务许可证A2.B1.B2-20100001</span>
+                        <a href="#" style="color: #999;">&nbsp;蜀ICP备15012512号-1&nbsp;&nbsp;</a>
+                        <span>川网文[2012]0762-026</span>
+                        <span>本站支持IPV6访问</span>
+                    </p>
+                    <p>
+                        <span>苏网文[2012]0491-023号</span>
+                        <span>网络视听许可证0112648号</span>
+                        <span>Copyright © 2020 咪咕文化科技有限公司</span>
+                    </p>
+                    <a href="#"><img src="image/brand_bottom_small.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------------------------  -->
+
+
+    <!------------------------------------------- 登录--------------------- -->
+    <div id="mask">
+        <div id="lo_content">
+            <span id="xxx"><i class="iconfont icon-guanbi"></i></span>
+            <div id="l_top">
+                <ul id="duanxin">
+                    <li class="selecttt">短信登录</li>
+                    <li>密码登录</li>
+                    <li>SIM登录</li>
+                </ul>
+            </div>
+            <div id="l_bottom">
+                <div id="dom" class="ph0" style="display: block;">
+                    <input type="text" placeholder="手机号">
+                    <input type="text" placeholder="请输入验证码">
+                    <input type="button" value="获取验证码">
+                    <input type="submit" name="" id="" value="登陆">
+                    <div>
+                        <span>登录即同意</span>
+                        <a href="#">《咪咕用户服务协议》</a>
+                        <span>和</span>
+                        <a href="#">《咪咕隐私权政策》</a>
+                    </div>
+                </div>
+                <div id="dom1" class="ph0">
+                    <input type="text" name="" id="mmm" placeholder="手机/邮箱/用户名">
+                    <input type="text" name="" id="" placeholder="密码">
+                    <div>
+                        <input type="checkbox"><label
+                            style="font-size: 14px; vertical-align: top; color: #999;">自动登录</label>
+                        <div><a href="#">忘记密码</a><span style="color: #e11377;">&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span><a
+                                href="#">注册</a>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <input type="submit" name="" id="" value="登陆">
+                    </a>
+                    <div class="yes">
+                        <span>登录即同意</span>
+                        <a href="#">《咪咕用户服务协议》</a>
+                        <span>和</span>
+                        <a href="#">《咪咕隐私权政策》</a>
+                    </div>
+                </div>
+                <div id="dom2" class="ph0">
+                    <input type="text" placeholder="手机号">
+                    <a href="#" class="aa">
+                        <input type="submit" name="" id="" value="登陆">
+                    </a>
+                    <p>
+                        温馨提示：<br>
+                        1.“SIM登录”是由中国移动提供的PC端安全登录服务<br>
+                        2.输入手机号点击“登录”，即可在手机上查看登录请求，并使用手机进行登录授权
+                    </p>
+                    <div class="yes1">
+                        <span>登录即同意</span>
+                        <a href="#">《咪咕用户服务协议》</a>
+                        <span>和</span>
+                        <a href="#">《咪咕隐私权政策》</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            //輸入框
+            var inp = document.getElementById("inp");
+            var inv = document.getElementById("inv");
+            inp.onfocus = function () {
+                inv.style.display = "block";
+            }
+            inp.onblur = function () {
+                inv.style.display = "none";
+            }
+
+
+            //登录
+            var lisss = document.getElementById("duanxin").getElementsByTagName("li");
+            var dvs = document.getElementsByClassName("ph0");
+            document.getElementById("dengll").onclick = function () {
+                document.getElementById("dom").style.display = "block";
+                document.getElementById("dom1").style.display = "none";
+                document.getElementById("dom2").style.display = "none";
+                document.getElementById("mask").style.display = "block";
+                for (var i = 0; i < lisss.length; i++) {
+                    lisss[i].setAttribute("idex", i);
+                    lisss[i].onclick = function () {
+                        for (var j = 0; j < lisss.length; j++) {
+                            lisss[j].className = " ";
+                            dvs[j].style.display = "none";
+                        }
+                        var idex = this.getAttribute("idex");
+                        this.className = "selecttt";
+                        dvs[idex].style.display = "block";
+                    }
+                }
+                lisss[0].className = "selecttt";
+                lisss[1].className = "";
+                lisss[2].className = "";
+            }
+
+            document.getElementById("xxx").onclick = function () {
+                document.getElementById("mask").style.display = "none";
+                console.log(document.getElementById("lo_content"));
+            }
+            document.getElementById("deng").onclick = function () {
+                document.getElementById("mask").style.display = "block";
+             }
+
+            //购物车
+            var sum = 0, count = 0;
+            var smal = document.getElementsByClassName("small");
+            var zong = document.getElementById("zong");
+            var quxiao = document.getElementById("quxiao");
+            var fan = document.getElementById("fan");
+            var z_jian = document.getElementById("z_jian");
+            var btn1 = document.getElementsByClassName("btn1");
+            var btn2 = document.getElementsByClassName("btn2");
+            var text = document.getElementsByClassName("text");
+            var qian = document.getElementsByClassName("qian");
+            var dan = [];
+            var heji = document.getElementById("heji");
+            //[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]
+            var de = document.getElementsByClassName("de");
+            for (var n = 0; n < de.length; n++) {
+                de[n].onclick = function () {
+                    this.parentNode.remove();
+                    //========================
+                    if (de.length > 0) {
+                        for (var i = 0; i < smal.length; i++) {
+                            var sum = 0, count = 0;
+                            for (var j = 0; j < smal.length; j++) {
+                                if (smal[j].checked) {
+                                    sum += parseFloat(qian[j].innerHTML);
+                                    count += parseInt(text[j].value);
+                                }
+                            }
+                            heji.innerText = sum.toFixed(2);
+                            z_jian.innerText = count;
+                        }
+                        //================================
+                        for (var i = 0; i < btn1.length; i++) {
+                            btn1[i].setAttribute("inde", i);
+                            btn2[i].setAttribute("inde", i);
+                            for (var j = 0; j < btn1.length; j++) {
+
+                                heji.innerText = sum.toFixed(2);
+                                //关于--
+                                btn1[j].onclick = function () {
+
+                                    var inde = this.getAttribute("inde");
+                                    if (text[inde].value >= 1) {
+                                        text[inde].value = --text[inde].value;
+                                    } else {
+                                        text[inde].value = 0;
+                                    }
+                                    text[inde].innerHTML = text[inde].value;
+                                    qian[inde].innerHTML = (dan[inde] * text[inde].value).toFixed(2);
+
+                                    var sum = 0, count = 0;
+                                    for (var k = 0; k < text.length; k++) {
+                                        // console.log(smal[k].checked);
+                                        if (smal[k].checked) {
+                                            sum += parseFloat(qian[k].innerHTML);
+                                            count += parseInt(text[k].value);
+                                        }
+                                    }
+                                    console.log(sum);
+                                    heji.innerHTML = sum.toFixed(2);
+                                    z_jian.innerText = count;
+                                }
+                                //关于加加
+                                btn2[j].onclick = function () {
+                                    var inde = this.getAttribute("inde");
+                                    if (text[inde].value >= 0) {
+                                        text[inde].value = ++text[inde].value;
+                                    }
+                                    text[inde].innertext = text[inde].value;
+                                    qian[inde].innerHTML = (dan[inde] * text[inde].value).toFixed(2);
+
+                                    var sum = 0, count = 0;
+                                    for (var k = 0; k < text.length; k++) {
+                                        if (smal[k].checked) {
+                                            sum += parseFloat(qian[k].innerHTML);
+                                            count += parseInt(text[k].value);
+                                        }
+                                    }
+                                    console.log(sum);
+                                    heji.innerText = sum.toFixed(2);
+                                    z_jian.innerText = count;
+                                }
+
+                            }
+
+                        }
+
+
+                    } else {
+                        heji.innerText = (0).toFixed(2);
+                        z_jian.innerText = 0;
+                        document.getElementsByClassName("nooo")[0].style.display="block";
+                        document.getElementsByClassName("bot")[0].style.display="none";
+                    }
+                }
+            }
+
+            fan.onclick = function () {
+                var sum = 0, count = 0;
+                for (var i = 0; i < smal.length; i++) {
+                    smal[i].checked = !smal[i].checked;
+                    if (smal[i].checked) {
+                        sum += parseFloat(qian[i].innerHTML);
+                        count += parseInt(text[i].value);
+                    }
+                }
+                heji.innerText = sum.toFixed(2);
+                z_jian.innerText = count;
+            }
+            zong.onclick = function () {
+                var sum = 0, count = 0;
+                for (var i = 0; i < smal.length; i++) {
+                    smal[i].checked = true;
+                    sum += parseFloat(qian[i].innerHTML);
+                    count += parseInt(text[i].value);
+                }
+                heji.innerText = sum.toFixed(2);
+                z_jian.innerText = count;
+            }
+            quxiao.onclick = function () {
+                for (var i = 0; i < smal.length; i++) {
+                    smal[i].checked = false;
+                }
+                zong.checked = false;
+                fan.checked = false;
+                heji.innerText = "0.00";
+                z_jian.innerText = 0;
+            }
+            //========================
+            for (var i = 0; i < smal.length; i++) {
+                smal[i].onclick = function () {
+                    var sum = 0, count = 0;
+                    var flag = true;
+                    for (var j = 0; j < smal.length; j++) {
+                        if (smal[j].checked) {
+                            sum += parseFloat(qian[j].innerHTML);
+                            count += parseInt(text[j].value);
+                        }
+                    }
+                    heji.innerText = sum.toFixed(2);
+                    z_jian.innerText = count;
+                }
+            }
+            //qian
+            for (var i = 0; i < qian.length; i++) {
+                dan[i] = parseFloat(qian[i].innerHTML) / parseFloat(text[i].value);
+            }
+
+
+            //关于加加和减减
+            for (var i = 0; i < btn1.length; i++) {
+                btn1[i].setAttribute("inde", i);
+                btn2[i].setAttribute("inde", i);
+                for (var j = 0; j < btn1.length; j++) {
+
+                    heji.innerText = sum.toFixed(2);
+                    //关于--
+                    btn1[j].onclick = function () {
+
+                        var inde = this.getAttribute("inde");
+                        if (text[inde].value >= 1) {
+                            text[inde].value = --text[inde].value;
+                        } else {
+                            text[inde].value = 0;
+                        }
+                        text[inde].innerHTML = text[inde].value;
+                        qian[inde].innerHTML = (dan[inde] * text[inde].value).toFixed(2);
+
+                        var sum = 0, count = 0;
+                        for (var k = 0; k < text.length; k++) {
+                            // console.log(smal[k].checked);
+                            if (smal[k].checked) {
+                                sum += parseFloat(qian[k].innerHTML);
+                                count += parseInt(text[k].value);
+                            }
+                        }
+                        console.log(sum);
+                        heji.innerHTML = sum.toFixed(2);
+                        z_jian.innerText = count;
+                    }
+                    //关于加加
+                    btn2[j].onclick = function () {
+                        var inde = this.getAttribute("inde");
+                        if (text[inde].value >= 0) {
+                            text[inde].value = ++text[inde].value;
+                        }
+                        text[inde].innertext = text[inde].value;
+                        qian[inde].innerHTML = (dan[inde] * text[inde].value).toFixed(2);
+
+                        var sum = 0, count = 0;
+                        for (var k = 0; k < text.length; k++) {
+                            if (smal[k].checked) {
+                                sum += parseFloat(qian[k].innerHTML);
+                                count += parseInt(text[k].value);
+                            }
+                        }
+                        console.log(sum);
+                        heji.innerText = sum.toFixed(2);
+                        z_jian.innerText = count;
+                    }
+
+                }
+
+
+            }
+
+            //=====
+
+        }
+
+        // // jquery
+        // $(function () {
+        //     $(".de").click(function(){
+        //         $(this).parent("tr").remove();
+        //     })
+        //   })
+
+    </script>
+</body>
+
+</html>
